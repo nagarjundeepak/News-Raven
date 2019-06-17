@@ -39,20 +39,36 @@ body{
 .container{
   margin: 15px;
 }
-
-.job span {
-  display: block;
+.job{
+  display: flex;
   padding: 10px;
   border: 1px solid #ccc;
   margin: 0 0 10px 0;
   text-decoration: none;
   color: black;
-  border-radius: 8px;
+  border-radius: 15px;
 }
-.job span:hover {
+.job:hover {
   background: #eee;
   cursor: pointer;
 }
-.job span:first-child {
+.job span {
+  padding: 10px;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+  color: black;
   font-weight: bold;
+}
+.job > img{
+  width: 30vw;
+  height: 20vh;
+  border-radius: 20px;
+}
+.job > a{
+  color: #333;
+  text-decoration: none;
+}
+.job > a:hover{
+  color: blueviolet;
+  text-decoration: underline;
 }
