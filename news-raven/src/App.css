@@ -1,33 +1,58 @@
-.App {
+body{
+  margin: 0;
+  font-family: lato;
+}
+.header{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 65px;
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.3);
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.menu{
+  padding-top: 10px;
 }
+.title{
+  padding-top: 16px;
+  font-family: 'Cinzel', serif;
+  width: 100%;
+}
+.today{
+  padding-top: 22px;
+  font-size: 11px;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer{
+  font-size: 12px;  
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 40px;
+  background: #bdc5cc;
+}
+.footer > span{
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.job span {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+}
+.job span:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.job span:first-child {
+  font-weight: bold;
 }
